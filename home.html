@@ -3,13 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
     <title>Home</title>
+
+    <nav>
+        <nav class="nav-inline">
+            <ul>
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="workshops.html">Workshops</a>
+              </li>
+            </ul>
+          </nav>
+          
+    </nav>
 
     <main>
         <h1>StudentSkillSwap</h1>
-        <h2>Login</h2>
-        <h2>Register</h2>
+        <form>
+            <p class="field">
+              <label for="form-simple-email">Email</label>
+              <input type="email" id="form-simple-email" placeholder="Enter Email" />
+            </p>
+            <p class="field">
+              <label for="form-simple-password">Password</label>
+              <input type="password" id="form-simple-password" placeholder="Enter Password" />
+            </p>
+            <p class="field">
+              <label class="control checkbox">
+                <input type="checkbox" name="checkbox" checked="true" />
+                <span class="control-indicator"></span>
+                <span class="control-label">I agree to checking this checkbox</span>
+              </label>
+            </p>
+            <p class="field">
+              <button type="submit" class="button">Submit</button>
+              <button type="reset" class="button">Reset</button>
+            </p>
+          </form>
+          
     </main>
     
 </head>
