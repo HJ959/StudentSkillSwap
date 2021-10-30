@@ -23,6 +23,10 @@ li {
   float: left;
 }
 
+img {
+    width: 33%;
+    height: 33%;
+}
 
 li a {
 	display: block;
