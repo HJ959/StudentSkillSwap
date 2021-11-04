@@ -1,44 +1,90 @@
-body {
-    margin-left: 20px;
-    margin-right: 20px;
-    position: relative;
-    top: 20px;
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+    
+    p {
+      font-size: calc(1em + 2vw);
+    }
+  
+    img {
+      height: 90%;
+      width: 90%;
+    }
+  }
+  /*===============================================================*/
+  /* Tablet Styles */
+  @media only screen and (min-width: 501px) and (max-width: 960px) {
+ 
+    img {
+      height: 90%;
+      width: 90%;
+      margin: 3%;
+    }
+  }
+  /*===============================================================*/
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    img {
+      height: 90%;
+      width: 90%;
+    }
+  
+    p {
+      font-size: calc(0.5em + 0.5vw);
+    }
+  }
 
+  body {
+        position: relative;
+        top: 40px;
+        padding-left: 10px;
+        background-color: #95bddc;
 }
 
 .nav-inline {
     position: fixed;
     top: 0;
     left: 0;
-	margin-left: 20px;
-    margin-right: 20px;
-    height: 40px;
+    
 }
 
-ul {
+.nav-ul {
     list-style-type: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
     overflow: hidden;
-    background-color: #FFFFFF;
+    background-color:  #c2d1e5;
+    border-radius: 25px;
+    width: 100%;
 }
 
-li {
-   
-}
 
-li a {
+.nav-li a {
     display: block;
     color: #000000;
-    background-color: #FFFFFF;
+    background-color:  #c2d1e5;
     text-align: center;
-    padding: 6px 16px;
     text-decoration: none;
+    padding: 10px;
+    font-size: calc(1em + 0.3vw);
 }
 
-li a:hover {
-    background-color: #AAAAAA;
+.nav-li a:hover {
+    background-color: #fbc6d0;
+}
+
+.workshop-li {
+    display: flex;
+    text-align: left;
+}
+
+.workshop-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.workshop-li a:hover {
+    background-color: #fbc6d0;
 }
 
 img {
@@ -49,7 +95,7 @@ img {
 }
 
 .active {
-    background-color: #DDDDDD;
+    background-color: #fb4c1f;
 }
 
 .fields {
